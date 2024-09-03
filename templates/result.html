@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h2>Prediction: {{ pred_output }}</h2>
+    <img src="{{ user_image }}" alt="Uploaded Image" style="width:300px;height:300px;">
+
+    <!-- Feedback Form -->
+    <h3>Provide your Feedback</h3>
+    <form action="/feedback" method="post">
+        <label for="rating">Rating (1-5):
